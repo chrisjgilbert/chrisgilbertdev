@@ -8,14 +8,16 @@
 <ul>
 	{#each projects as project}
 		<li class="project">
-			<div class="project__child-container">
-				<a target="_blank" href={project.url}>
-					<h2>{project.name}</h2>
-				</a>
-				<p>{project.description}</p>
-			</div>
-			<div class="project__child-container">
-				<img src={project.src} alt={project.name} />
+			<div class="project__card">
+				<div class="project__card__child-container">
+					<a target="_blank" href={project.url}>
+						<h2>{project.name}</h2>
+					</a>
+					<p>{project.description}</p>
+				</div>
+				<div class="project__card__child-container">
+					<img src={project.src} alt={project.name} />
+				</div>
 			</div>
 		</li>
 	{/each}
@@ -29,19 +31,27 @@
 		text-align: center;
 	}
 	.project {
+		margin: var(--xl-spacer) 0;
+	}
+
+	.project__card {
 		display: flex;
 		align-items: center;
 		grid-gap: var(--l-spacer);
 	}
+	.project:nth-of-type(even) .project__card {
+		flex-direction: row-reverse;
+	}
 
-	.project__child-container {
+	.project__card__child-container {
 		flex: 1;
 	}
 
-	.project__child-container a {
+	.project__card__child-container a {
 		color: var(--white);
 	}
-	.project__child-container img {
+
+	.project__card__child-container img {
 		height: 100%;
 		width: 100%;
 	}
