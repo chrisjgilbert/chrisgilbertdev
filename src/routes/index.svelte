@@ -7,7 +7,6 @@
 		<img class="about__image" src="chrisgilbert.png" alt="chris gilbert" />
 	</div>
 	<div class="about__copy">
-		<p>Hi, I am Chris.</p>
 		<p>
 			I am a London based Software Devloper currently working at <a
 				href="https://multiverse.io/"
@@ -15,8 +14,8 @@
 			>.
 		</p>
 		<p>
-			Outside of my day job I like to work on side projects and write blog posts which you will
-			eventually live here.
+			Outside of my day job I like to work on <a href="/projects">side projects</a> and write blog posts
+			which will eventually live here.
 		</p>
 	</div>
 
