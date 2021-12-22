@@ -7,16 +7,19 @@
 		<img class="about__image" src="chrisgilbert.png" alt="chris gilbert" />
 	</div>
 	<div class="about__copy">
-		<p>Hi, I am Chris.</p>
 		<p>
 			I am a London based Software Devloper currently working at <a
+				class="underline"
 				href="https://multiverse.io/"
 				target="_blank">Multiverse</a
 			>.
 		</p>
 		<p>
-			Outside of my day job I like to work on side projects and write blog posts which you will
-			eventually live here.
+			Outside of my day job, I like to work on side projects which you can find <a
+				class="underline"
+				href="/projects"
+				>here.
+			</a>
 		</p>
 	</div>
 
@@ -40,7 +43,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		padding: var(--l-spacer) 0;
+		padding: var(--xxl-spacer) 0;
 	}
 
 	.about__image-container {
@@ -57,10 +60,6 @@
 		text-align: center;
 		max-width: 560px;
 		margin: var(--l-spacer) auto;
-	}
-
-	.about__copy a {
-		color: var(--white);
 	}
 
 	.logo {

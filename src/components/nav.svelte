@@ -8,21 +8,22 @@
 			<a href="/">Chris Gilbert | <strong>Software Developer</strong></a>
 		</li>
 	</ul>
-	<ul>
-		<!-- <li> -->
-		<!-- <a class:active={$page.path === '/projects'} href="/projects">Projects</a> -->
-		<!-- </li> -->
-		<!-- <li> -->
-		<!-- <a class:active={$page.path === '/blog'} href="/blog">Blog</a> -->
-		<!-- </li> -->
-	</ul>
+	<!-- <ul> -->
+	<!-- <li> -->
+	<!-- <a class:active={$page.path === '/projects'} href="/projects">Projects</a> -->
+	<!-- </li> -->
+	<!-- <li> -->
+	<!-- <a class:active={$page.path === '/blog'} href="/blog">Blog</a> -->
+	<!-- </li> -->
+	<!-- </ul> -->
 </nav>
 
 <style>
 	nav {
-		margin: var(--l-spacer) 0;
+		padding: var(--l-spacer) 0;
 		display: flex;
-		justify-content: center;
+		justify-content: space-between;
+		border-bottom: 1px solid var(--white);
 	}
 
 	ul {

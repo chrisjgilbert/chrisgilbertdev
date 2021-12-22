@@ -4,7 +4,10 @@
 
   --black: #000;
   --white: #FFF;
+  --purple: #AA14F0;
 
+  --xxl-spacer: 64px;
+  --xl-spacer: 48px;
   --l-spacer: 32px;
   --m-spacer: 16px;
   --s-spacer: 8px;
@@ -21,4 +24,40 @@ ul {
 body {
   background-color: var(--black);
   color: var(--white);
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+  position: relative;
+}
+
+a.underline::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: var(--white);
+  opacity: 1;
+  transform: translate3d(0, 0.2em, 0);
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: var(--white);
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
+}
+
+a:hover::after,
+a:focus::after {
+  opacity: 1;
+  transform: translate3d(0, 0.2em, 0);
 }
