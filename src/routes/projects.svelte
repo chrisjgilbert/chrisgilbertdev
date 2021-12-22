@@ -2,16 +2,16 @@
 	import projects from '../data/projects.js';
 </script>
 
-<header>
-	<h1>Projects</h1>
+<header class="header">
+	<h1 class="header__copy">Projects</h1>
 </header>
 <ul>
 	{#each projects as project}
 		<li class="project">
 			<div class="project__child-container">
-				<h2 target="_blank" href={project.url}>
-					{project.name}
-				</h2>
+				<a target="_blank" href={project.url}>
+					<h2>{project.name}</h2>
+				</a>
 				<p>{project.description}</p>
 			</div>
 			<div class="project__child-container">
@@ -22,10 +22,10 @@
 </ul>
 
 <style>
-	header {
+	.header {
 		margin: var(--xl-spacer) 0;
 	}
-	header h1 {
+	.header__copy {
 		text-align: center;
 	}
 	.project {
