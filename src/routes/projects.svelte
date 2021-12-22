@@ -15,7 +15,7 @@
 			<div class="project__card">
 				<div class="project__card__child-container">
 					<a target="_blank" href={project.url}>
-						<h2>{project.name}</h2>
+						<h2 class="project__card__title">{project.name}</h2>
 					</a>
 					<p>{project.description}</p>
 				</div>
@@ -58,6 +58,10 @@
 
 	.project__card__child-container {
 		flex: 1;
+	}
+
+	.project__card__title {
+		margin: 0 var(--l-spacer) 0 0;
 	}
 
 	.project__card__child-container a {

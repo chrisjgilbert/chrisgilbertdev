@@ -39,7 +39,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		padding: var(--l-spacer) 0;
+		padding: var(--xxl-spacer) 0;
 	}
 
 	.about__image-container {
