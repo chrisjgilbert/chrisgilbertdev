@@ -2,6 +2,10 @@
 	import projects from '../data/projects.js';
 </script>
 
+<svelte:head>
+	<title>Chris Gilbert | Software Developer - Projects</title>
+</svelte:head>
+
 <header class="header">
 	<h1 class="header__copy">Projects</h1>
 </header>
@@ -25,13 +29,14 @@
 
 <style>
 	.header {
-		margin: var(--xl-spacer) 0;
+		padding: var(--l-spacer) 0;
 	}
+
 	.header__copy {
 		text-align: center;
 	}
 	.project {
-		margin: var(--xl-spacer) 0;
+		margin-bottom: var(--xxl-spacer);
 	}
 
 	.project__card {
@@ -39,8 +44,16 @@
 		align-items: center;
 		grid-gap: var(--l-spacer);
 	}
+
 	.project:nth-of-type(even) .project__card {
 		flex-direction: row-reverse;
+	}
+
+	@media (max-width: 768px) {
+		.project .project__card,
+		.project:nth-of-type(even) .project__card {
+			flex-direction: column;
+		}
 	}
 
 	.project__card__child-container {

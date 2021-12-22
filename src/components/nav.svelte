@@ -20,9 +20,10 @@
 
 <style>
 	nav {
-		margin: var(--l-spacer) 0;
+		padding: var(--l-spacer) 0;
 		display: flex;
 		justify-content: space-between;
+		border-bottom: 1px solid var(--white);
 	}
 
 	ul {
