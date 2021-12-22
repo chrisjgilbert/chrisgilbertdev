@@ -5,13 +5,13 @@
 <nav>
 	<ul>
 		<li>
-			<a href="/">Chris Gilbert | <strong>Software Developer</strong></a>
+			<a class:active={$page.path === '/'} href="/">Chris Gilbert</a>
 		</li>
 	</ul>
 	<ul>
-		<!-- <li> -->
-		<!-- <a class:active={$page.path === '/projects'} href="/projects">Projects</a> -->
-		<!-- </li> -->
+		<li>
+			<a class:active={$page.path === '/projects'} href="/projects">Projects</a>
+		</li>
 		<!-- <li> -->
 		<!-- <a class:active={$page.path === '/blog'} href="/blog">Blog</a> -->
 		<!-- </li> -->
@@ -22,7 +22,7 @@
 	nav {
 		margin: var(--l-spacer) 0;
 		display: flex;
-		justify-content: center;
+		justify-content: space-between;
 	}
 
 	ul {
