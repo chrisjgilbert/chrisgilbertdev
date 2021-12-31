@@ -31,7 +31,7 @@
 			<a target="_blank" href="https://www.linkedin.com/in/chrisjgilbert88">
 				<img class="logo" src="linkedin-logo.png" alt="linkedin" />
 			</a>
-			<a href="mailto:chrisjgilbert3@gmail.com">
+			<a href="mailto:chris@chrisgilbert.dev">
 				<img class="logo" src="email-logo.png" alt="linkedin" />
 			</a>
 		</li>
